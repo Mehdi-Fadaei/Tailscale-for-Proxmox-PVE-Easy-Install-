@@ -31,8 +31,17 @@ Requirements
 1. Clone this repository (or just download the script):
 
    bash
-   git clone https://github.com/YOURUSERNAME/tailscale-proxmox.git
+   git clone https://github.com/Mehdi-Fadaei/Tailscale-for-Proxmox-PVE-Easy-Install-.git
    cd tailscale-proxmox
+
+   Upload this script to each node:
+
+scp install-tailscale.sh root@192.xxx.xxx.xxx:/root/
+ssh root@192.xxx.xxx.xxx "bash /root/install-tailscale.sh"
+
+
+Repeat for all nodes.
+
 Run the installer on each node:
 
 bash
